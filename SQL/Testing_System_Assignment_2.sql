@@ -85,10 +85,10 @@ CREATE TABLE Question (
     Content NVARCHAR(100) NOT NULL,
     CategoryID TINYINT UNSIGNED NOT NULL,
     TypeID TINYINT UNSIGNED NOT NULL,
-    CreatorID TINYINT UNSIGNED NOT NULL UNIQUE KEY,
+    CreatorID TINYINT UNSIGNED NOT NULL,
     CreateDate DATE,
     FOREIGN KEY (CategoryID)
-        REFERENCES CategoryQuestion (CategoryID)
+        REFERENCES CategoryQuestion (CategoryID) 
         ,
     FOREIGN KEY (TypeID)
         REFERENCES TypeQuestion (TypeID)
