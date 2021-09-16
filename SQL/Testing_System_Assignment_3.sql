@@ -118,7 +118,7 @@ VALUES 				(N'Trả lời 01'	,   5			,	'fault'	),
 delete  from Exam;
 select*from  Exam;
 INSERT INTO Exam	(`Code`			, Title					, CategoryID	, Duration	, CreatorID		, CreateDate )
-VALUES 				('VTIQ001'		, N'Đề thi C#'			,	1			,	60		,   '5'			,'2019-04-05'),
+VALUES 				('VTIQ001'		, N'Đề thi C#'			,	1			,	60		,   '5'			,'2018-04-05'),
 					('VTIQ002'		, N'Đề thi PHP'			,	10			,	60		,   '2'			,'2019-04-05'),
                     ('VTIQ003'		, N'Đề thi C++'			,	9			,	120		,   '2'			,'2019-04-07'),
                     ('VTIQ004'		, N'Đề thi Java'		,	6			,	60		,   '3'			,'2020-04-08'),
@@ -134,7 +134,7 @@ delete  from ExamQuestion;
 select*from  ExamQuestion;
 INSERT INTO ExamQuestion(ExamID	, QuestionID	) 
 VALUES 					(	1	,		5		),
-						(	2	,		10		), 
+						(	1	,		10		), 
 						(	3	,		4		), 
 						(	4	,		3		), 
 						(	5	,		7		), 
